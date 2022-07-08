@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        #container {
+            width: 70%;
+            background-color: #6a66c0;
+            margin: auto;
+            height: 600px;
+            display: flex;
+            
+        }
+        #container>div {
+            background-color: white;
+            box-shadow: rgb(79,127,205);
+            border-radius: 8px;
+            width: 38%;
+            margin: auto;
+           
+            height: 80%;
+            padding: 20px;
+          
+        }
+        div>h1 {
+            padding: 20px;
+            text-align: center;
+        }
+        div>p {
+            color: grey;
+        }
+        button {
+            background-color: rgb(100,107,194);
+            color: white;
+            border: 0px solid white;
+            padding: 15px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        button+p {
+            margin-top: 50px;
+            text-align: center;
+        }
+        button+p+p {
+            text-align: center;
+        }
+       
+        #Forgot_Password{
+           
+            width: 100%;
+            height: auto;
+            margin: auto;
+            margin-top: 25%;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+
+        span{
+            color:rgb(45,103,154);
+        }
+
+        #Forgot_Password>div{
+          
+            width: 100%;
+            font-size: 80%;
+            font-size: 16px;
+            margin: auto;
+            height: auto;
+            text-align: center;
+            color: rgb(131,147,180);
+        }
+        
+        .signup{
+            
+            width: 100%;
+            height: 50px;
+            height: auto;
+            margin: auto;
+      
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+
+        .signup>div{
+        
+            width: 100%;
+            margin: auto;
+            font-size: 14px;
+            height: 20px;
+            height: auto;
+            text-align: center;
+            color: rgb(131,147,180);
+            margin-top: 3%;
+        }
+      
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h1>Login</h1>
+            <p>Email</p>
+            <hr>
+            <p>Password</p>
+            <hr>
+            <button>Login</button>
+
+          <div id="Forgot_Password">
+            <div>Forgot <span> Password</span> ?</div>
+        </div>
+
+            <div class="signup">
+               <div>Don't have an account? <span>Sign up</span></div>
+            </div>           
+        </div>
+    </div>
+</body>
+</html>
