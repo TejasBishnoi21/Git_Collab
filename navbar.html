@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        width: 100%;
+        height: auto;
+        
+        display: flex;
+        justify-content: space-between;
+        border-radius: 15px;
+        background-color: #1b2838;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .container>div{
+        width: 30%;
+        height: 100%;
+       
+    }
+    .container>div:nth-child(2){
+        display: flex;
+        justify-content: space-around;
+    }
+    .container>div:nth-child(1)>p{
+        margin-left: 10px;
+    }
+    p{
+        color: #e0e2e3;
+        font-size: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+<script>
+    document.querySelector("div").setAttribute("class","container")
+    for(let i=0;i<2;i++){
+       let div= document.createElement("div")
+       document.querySelector("div").append(div);
+    }
+    let p=document.createElement("p");
+    document.querySelector(".container>div:nth-child(1)").append(p)
+   p.innerText="Reebok"
+   let ra=[{item:"Men"},{item:"Women"},{item:"Login"},{item:"Signup"}]
+  ra.map(function(elem){ let p2 = document.createElement("p");
+    document.querySelector(".container>div:nth-child(2)").append(p2)
+    p2.innerText=elem.item})
+</script>
