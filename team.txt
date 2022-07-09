@@ -1,0 +1,8 @@
+Team name=Hoard Worriors.
+
+team member-1:- Task-2:-Tejas Bishnoi.
+team member-2:- Navbar:- Divyank Mishra.
+team member-3:- SignupPage:- Abhay Kumar.
+team member-4:- LoginPage:- Bashistha Nayak.
+team member-5:- MensPage:- Pankaj More.
+7:- End-Task:- Common.
